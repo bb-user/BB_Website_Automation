@@ -16,6 +16,7 @@ public class BasePageStepDefs {
 		if(driver == null) {
 			driver = new FirefoxDriver();
 		}
+		driver.manage().window().maximize();
 		return driver;
 	}
 
