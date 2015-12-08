@@ -1,13 +1,14 @@
 package com.betabreakers.BB_Website_Cuke_Automation;
 
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 
 public class CommonPageStepDefs extends BasePageStepDefs{
 
-//	@After
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
 
 	@Given("^I am on the home page$")
 	public void onZooSite() throws Throwable {
