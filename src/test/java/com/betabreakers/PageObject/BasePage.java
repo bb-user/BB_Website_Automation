@@ -12,7 +12,6 @@ public class BasePage {
 	}
 
 	public HomePage navigateToHomePage() {
-		driver.manage().window().maximize();
 		driver.navigate().to("http://www.betabreakers.com");
 
 		return new HomePage(driver);
