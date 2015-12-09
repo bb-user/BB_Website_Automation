@@ -11,8 +11,8 @@ public class CommonPageStepDefs extends BasePageStepDefs{
 	}
 
 	@Given("^I am on the home page$")
-	public void onZooSite() throws Throwable {
-		driver.navigate().to("http://www.betabreakers.com");
+	public void onHomePage() throws Throwable {
+		homePage.navigateToHomePage();
 
 	}
 
