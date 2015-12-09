@@ -9,7 +9,6 @@ public class BasePageStepDefs {
 	protected static WebDriver driver;
 	protected HomePage homePage;
 
-
 	BasePageStepDefs(){
 		getDriver();
 		homePage = new HomePage(driver);
