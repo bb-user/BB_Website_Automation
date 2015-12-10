@@ -17,6 +17,12 @@ public class BasePage {
 		return new HomePage(driver);
 	}
 
+	public ServicesPage navigateToServicesPage() {
+		driver.navigate().to("http://www.betabreakers.com/services");
+
+		return new ServicesPage(driver);
+	}
+
 	public void quitDriver() {
 		driver.quit();
 	}
