@@ -24,8 +24,12 @@ public class PropertyManager {
 			prop.load(input);
 
 			homePageTitle = prop.get("home_page_title").toString();
-
-
+			servicesPageTitle = prop.get("services_page_title").toString();
+			whyTestPageTitle = prop.get("why_test_page_title").toString();
+			theLabsPageTitle = prop.get("the_labs_page_title").toString();
+			companyPageTitle = prop.get("company_page_title").toString();
+			contactPageTitle = prop.get("contact_page_title").toString();
+			blogPageTitle = prop.get("blog_page_title").toString();
 
 		} catch (IOException e) {
 			e.printStackTrace();
