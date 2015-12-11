@@ -2,13 +2,19 @@ package com.betabreakers.PageObject;
 
 import org.openqa.selenium.WebDriver;
 
-public class BasePage {
+public abstract class BasePage 
+{
 
 
 	protected WebDriver driver;
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
+	}
+	
+	public void navigateTo(String URL)
+	{
+		driver.navigate().to(URL);
 	}
 
 	public HomePage navigateToHomePage() {
