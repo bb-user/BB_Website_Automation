@@ -7,7 +7,7 @@ public class HomePage extends BasePage{
 
 	public HomePage(WebDriver driver) {
 		super(driver);
-		super.navigateTo("http://www.betabreakers.com");
+		//super.navigateTo("http://www.betabreakers.com");
 	}
 
 	public ServicesPage whatsYourNextProject() {
