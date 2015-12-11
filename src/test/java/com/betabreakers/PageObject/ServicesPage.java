@@ -9,4 +9,8 @@ public class ServicesPage extends BasePage{
 
 	}
 
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+
 }
