@@ -12,7 +12,6 @@ public class HomePage extends BasePage{
 
 	public ServicesPage whatsYourNextProject() {
 		driver.findElement(By.cssSelector("#slidewrap > div > div > a")).click();
-
 		return new ServicesPage(driver);
 	}
 
