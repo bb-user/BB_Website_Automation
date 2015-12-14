@@ -27,7 +27,6 @@ public class HomePageSteps extends BasePageStepDefs
 	@Then("^I should be on the Services Page$")
 	public void i_should_be_on_the_Services_Page() throws Throwable
 	{
-//		System.out.println(servicesPage.getPageTitle());
 			Assert.assertTrue("Didn't make it to the Services Page",
 								servicesPage
 									.getPageTitle()
