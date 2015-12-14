@@ -10,7 +10,7 @@ public class HomePage extends BasePage{
 		//super.navigateTo("http://www.betabreakers.com");
 	}
 
-	public ServicesPage whatsYourNextProject() {
+	public ServicesPage clickWhatsYourNextProject() {
 		driver.findElement(By.cssSelector("#slidewrap > div > div > a")).click();
 		return new ServicesPage(driver);
 	}
