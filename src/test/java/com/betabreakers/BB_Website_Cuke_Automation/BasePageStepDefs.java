@@ -12,8 +12,6 @@ import com.betabreakers.PageObject.TestimonialsPage;
 import com.betabreakers.PageObject.TheLabsPage;
 import com.betabreakers.PageObject.WhyTestPage;
 
-import cucumber.api.java.After;
-
 public class BasePageStepDefs {
 	protected static WebDriver driver;
 	protected HomePage homePage;
@@ -37,11 +35,4 @@ public class BasePageStepDefs {
 		driver.manage().window().maximize();
 		return driver;
 	}
-
-	@After
-	public void tearDown() {
-		homePage.quitDriver();
-	}
-
-
 }

@@ -39,7 +39,6 @@ public class HomePageSteps extends BasePageStepDefs
 							.getPageTitle()
 							.toLowerCase()
 							.contains(title.toLowerCase()));
-
 	}
 
 	@When("^I click a services link$")
@@ -77,5 +76,10 @@ public class HomePageSteps extends BasePageStepDefs
 	{
 
 	}
+
+//	@Then("^I close the browser$")
+//	public void quitBrowser() throws Throwable {
+//	    homePage.quitDriver();
+//	}
 
 }

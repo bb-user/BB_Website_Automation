@@ -7,5 +7,4 @@ public class TestimonialsPage extends BasePage{
 	public TestimonialsPage(WebDriver driver) {
 		super(driver);
 	}
-
 }
