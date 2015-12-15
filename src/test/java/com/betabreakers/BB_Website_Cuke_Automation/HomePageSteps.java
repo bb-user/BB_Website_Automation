@@ -7,15 +7,6 @@ import cucumber.api.java.en.When;
 
 public class HomePageSteps extends BasePageStepDefs
 {
-//	HomePage homePage = new HomePage(new FirefoxDriver());
-//
-//	@Given("^I am on the home page$")
-//	public void i_am_on_the_home_page() throws Throwable
-//	{
-//	    System.out.println("this is where verficiation of home page with exception handling is done");
-//	}
-
-
 
 	@When("^I click on Whats Your Next Project$")
 	public void i_click_on_Whats_Your_Next_Project() throws Throwable
