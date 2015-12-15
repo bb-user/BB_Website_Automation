@@ -31,8 +31,6 @@ public class HomePageSteps extends BasePageStepDefs
 								servicesPage
 									.getPageTitle()
 									.equals("Software Quality Assurance & Testing Services | Beta Breakers"));
-
-
 	}
 
 	@When("^I click on a client$")
