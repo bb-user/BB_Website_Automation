@@ -31,10 +31,10 @@ public class HomePageSteps extends BasePageStepDefs
 		testimonialsPage = homePage.clickOnPreviousClient(link);
 	}
 
-	/**Confirming the correct client testimonial page was reached*/
+	/**Confirming the correct client testimonials page was reached*/
 	@Then("^I check I am on \"([^\"]*)\"$")
 	public void shouldCheckTitle(String title) throws Throwable {
-		Assert.assertTrue("Didn't make it to the Services Page",
+		Assert.assertTrue("Didn't make it to the client testimonials Page",
 				testimonialsPage
 					.getPageTitle()
 					.toLowerCase()
