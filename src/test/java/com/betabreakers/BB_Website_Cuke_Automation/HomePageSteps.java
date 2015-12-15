@@ -30,20 +30,24 @@ public class HomePageSteps extends BasePageStepDefs
 			Assert.assertTrue("Didn't make it to the Services Page",
 								servicesPage
 									.getPageTitle()
-									.equals("Software Quality Assurance & Testing Services | Beta Breakers"));
+									.toLowerCase()
+									.contains("services"));
 	}
 
-	@When("^I click on a client$")
-	public void i_click_on_a_client() throws Throwable
-	{
-
-
+	/**Checking the previous clients links*/
+	@When("^I click on \"([^\"]*)\"$")
+	public void shouldClickLink(String link) throws Throwable {
+		testimonialsPage = homePage.clickOnPreviousClient(link);
 	}
 
-	@Then("^I should be on that clients referal page$")
-	public void i_should_be_on_that_clients_referal_page() throws Throwable
-	{
-
+	/**Confirming the correct client testimonial page was reached*/
+	@Then("^I check I am on \"([^\"]*)\"$")
+	public void shouldCheckTitle(String title) throws Throwable {
+		Assert.assertTrue("Didn't make it to the Services Page",
+				testimonialsPage
+					.getPageTitle()
+					.toLowerCase()
+					.contains(title.toLowerCase()));
 
 	}
 

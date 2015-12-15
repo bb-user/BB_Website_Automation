@@ -21,7 +21,7 @@ public class BasePageStepDefs {
 	protected CompanyPage companyPage;
 	protected ContactPage contactPage;
 	protected BlogPage blogPage;
-	protected TestimonialsPage testimonialPage;
+	protected TestimonialsPage testimonialsPage;
 
 	BasePageStepDefs(){
 		getDriver();

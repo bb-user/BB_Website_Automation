@@ -18,10 +18,4 @@ public class CommonPageStepDefs extends BasePageStepDefs{
 
 	}
 
-//	@When("^I click on \"([^\"]*)\"$")
-//	public void clickOn(String link) throws Throwable {
-//		driver.findElement(By.id(link.toLowerCase() + "_link")).click();
-//
-//	}
-
 }
