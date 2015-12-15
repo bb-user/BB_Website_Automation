@@ -2,7 +2,7 @@ package com.betabreakers.PageObject;
 
 import org.openqa.selenium.WebDriver;
 
-public abstract class BasePage 
+public abstract class BasePage
 {
 
 
@@ -11,10 +11,14 @@ public abstract class BasePage
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public void navigateTo(String URL)
 	{
 		driver.navigate().to(URL);
+	}
+
+	public String getPageTitle() {
+		return driver.getTitle();
 	}
 
 	public HomePage navigateToHomePage() {
