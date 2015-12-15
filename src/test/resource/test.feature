@@ -5,7 +5,7 @@ Feature: This is a test feature
   #    When I click on Whats Your Next Project
   #    Then I should be on the Services Page
   Scenario Outline: Test Page Heading
-    Given I am on the Beta Breakers site
+    Given I am on the home page
     When I click on <Link>
     Then I check I am on <Title>
 
