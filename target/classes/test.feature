@@ -15,5 +15,5 @@ Feature: This is a test feature
       | "3"  | "Oracle"   |
       | "4"  | "Scripps"  |
       | "5"  | "LeapFrog" |
-      | "6"  | "Snap-On"  |
+      | "6"  | "Snap On"  |
       | "7"  | "Trek"     |

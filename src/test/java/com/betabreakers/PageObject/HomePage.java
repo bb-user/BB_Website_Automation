@@ -17,7 +17,7 @@ public class HomePage extends BasePage{
 
 	public TestimonialsPage clickOnPreviousClient(String client) {
 		driver.findElement(By.cssSelector
-								("#logoblock > div > nth-child(" + client + ") > a"))
+								("#logoblock > div:nth-child(" + client + ") > a > img"))
 								.click();
 		return new TestimonialsPage(driver);
 	}

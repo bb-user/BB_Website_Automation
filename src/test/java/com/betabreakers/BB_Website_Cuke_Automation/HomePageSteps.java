@@ -20,9 +20,9 @@ public class HomePageSteps extends BasePageStepDefs
 	{
 			Assert.assertTrue("Didn't make it to the Services Page",
 								servicesPage
-									.getPageTitle()
-									.toLowerCase()
-									.contains("services"));
+								.getPageTitle()
+								.toLowerCase()
+								.contains("services"));
 	}
 
 	/**Checking the previous clients links*/
@@ -35,10 +35,10 @@ public class HomePageSteps extends BasePageStepDefs
 	@Then("^I check I am on \"([^\"]*)\"$")
 	public void shouldCheckTitle(String title) throws Throwable {
 		Assert.assertTrue("Didn't make it to the client testimonials Page",
-				testimonialsPage
-					.getPageTitle()
-					.toLowerCase()
-					.contains(title.toLowerCase()));
+							testimonialsPage
+							.getPageTitle()
+							.toLowerCase()
+							.contains(title.toLowerCase()));
 
 	}
 
