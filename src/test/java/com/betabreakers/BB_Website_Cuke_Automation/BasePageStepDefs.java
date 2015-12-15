@@ -8,6 +8,7 @@ import com.betabreakers.PageObject.CompanyPage;
 import com.betabreakers.PageObject.ContactPage;
 import com.betabreakers.PageObject.HomePage;
 import com.betabreakers.PageObject.ServicesPage;
+import com.betabreakers.PageObject.TestimonialsPage;
 import com.betabreakers.PageObject.TheLabsPage;
 import com.betabreakers.PageObject.WhyTestPage;
 
@@ -20,6 +21,7 @@ public class BasePageStepDefs {
 	protected CompanyPage companyPage;
 	protected ContactPage contactPage;
 	protected BlogPage blogPage;
+	protected TestimonialsPage testimonialPage;
 
 	BasePageStepDefs(){
 		getDriver();
