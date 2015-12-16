@@ -30,8 +30,8 @@ public class HomePageSteps extends BasePageStepDefs {
 
 	/** Checking the previous clients links */
 	@When("^I click on \"([^\"]*)\"$")
-	public void shouldClickLink(String link) throws Throwable {
-		testimonialsPage = homePage.clickOnPreviousClient(link);
+	public void shouldClickLink(String title) throws Throwable {
+		testimonialsPage = homePage.clickOnPreviousClient(title.toLowerCase());
 	}
 
 	/** Confirming the correct client testimonials page was reached */

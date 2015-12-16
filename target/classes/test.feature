@@ -7,14 +7,14 @@ Feature: This is a test feature
   #      And I close the browser
   Scenario Outline: Test Page Heading
     Given I am on the home page
-    When I click on <Link>
+    When I click on <Title>
     Then I check I am on <Title>
 
     Examples: 
-      | Link | Title      |
-      | "2"  | "Cisco"    |
-      | "3"  | "Oracle"   |
-      | "4"  | "Scripps"  |
-      | "5"  | "LeapFrog" |
-      | "6"  | "Snap On"  |
-      | "7"  | "Trek"     |
+      | Title      |
+      | "Cisco"    |
+      | "Oracle"   |
+      | "Scripps"  |
+      | "LeapFrog" |
+      | "Snap On"  |
+      | "Trek"     |
