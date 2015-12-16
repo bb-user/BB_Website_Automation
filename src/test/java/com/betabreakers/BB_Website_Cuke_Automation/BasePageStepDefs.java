@@ -13,7 +13,7 @@ import com.betabreakers.PageObject.TheLabsPage;
 import com.betabreakers.PageObject.WhyTestPage;
 
 public class BasePageStepDefs {
-	protected static WebDriver driver;
+
 	protected HomePage homePage;
 	protected ServicesPage servicesPage;
 	protected WhyTestPage whyTestPage;
@@ -23,13 +23,14 @@ public class BasePageStepDefs {
 	protected BlogPage blogPage;
 	protected TestimonialsPage testimonialsPage;
 
-	BasePageStepDefs(){
+	BasePageStepDefs() {
 		getDriver();
-		homePage = new HomePage(driver);
 	}
 
+	protected static WebDriver driver;
+
 	protected WebDriver getDriver() {
-		if(driver == null) {
+		if (driver == null) {
 			driver = new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
