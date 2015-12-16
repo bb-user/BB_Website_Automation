@@ -9,7 +9,7 @@ Feature: This is a test feature
     Given I am on the home page
     When I click on <Link>
     Then I check I am on <Title>
-    And I close the browser
+#    And I close the browser
 
     Examples: 
       | Link | Title      |
