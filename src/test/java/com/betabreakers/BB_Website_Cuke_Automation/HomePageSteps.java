@@ -12,8 +12,6 @@ public class HomePageSteps extends BasePageStepDefs {
 
 	@Given("^I am on the home page$")
 	public void onHomePage() throws Throwable {
-//		driver = new FirefoxDriver();
-//		driver.manage().window().maximize();
 		homePage = new HomePage(driver);
 		homePage.navigateToHomePage();
 	}
