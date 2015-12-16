@@ -24,7 +24,7 @@ public class BasePageStepDefs {
 	protected TestimonialsPage testimonialsPage;
 
 	BasePageStepDefs() {
-		getDriver();
+		//getDriver();
 	}
 
 	protected static WebDriver driver;

@@ -1,7 +1,6 @@
 package com.betabreakers.BB_Website_Cuke_Automation;
 
 import org.junit.Assert;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.betabreakers.PageObject.HomePage;
 
@@ -13,7 +12,8 @@ public class HomePageSteps extends BasePageStepDefs {
 
 	@Given("^I am on the home page$")
 	public void onHomePage() throws Throwable {
-		driver = new FirefoxDriver();
+//		driver = new FirefoxDriver();
+//		driver.manage().window().maximize();
 		homePage = new HomePage(driver);
 		homePage.navigateToHomePage();
 	}
