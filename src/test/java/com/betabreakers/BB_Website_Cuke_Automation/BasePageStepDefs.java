@@ -12,6 +12,7 @@ import com.betabreakers.PageObject.HomePage;
 import com.betabreakers.PageObject.ServicesPage;
 import com.betabreakers.PageObject.TestimonialsPage;
 import com.betabreakers.PageObject.TheLabsPage;
+import com.betabreakers.PageObject.WebsiteTestingPage;
 import com.betabreakers.PageObject.WhyTestPage;
 
 public class BasePageStepDefs {
@@ -26,6 +27,7 @@ public class BasePageStepDefs {
 	protected TestimonialsPage testimonialsPage;
 	protected FunctionalTestingPage functionalTestingPage;
 	protected CompatibilityTestingPage compatibilityTestingPage;
+	protected WebsiteTestingPage websiteTestingPage;
 
 	BasePageStepDefs() {
 		//getDriver();

@@ -19,5 +19,5 @@ Feature: This is a test feature
   # | "Trek"     |
   Scenario: checking the testing services icons and read more links
     Given I am on the home page
-    When I click on the Compatibility Testing Icon
-    Then I should be on the Compatibility Testing Page
+    When I click on the Website Testing Icon
+    Then I should be on the Website Testing Page

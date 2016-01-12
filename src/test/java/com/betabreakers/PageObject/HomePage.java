@@ -53,4 +53,10 @@ public class HomePage extends BasePage {
 		return new CompatibilityTestingPage(driver);
 	}
 
+	public WebsiteTestingPage clickOnWebsiteTestingIcon() {
+		driver.findElement(By.cssSelector("#black-studio-tinymce-5 > div > a > img")).click();
+
+		return new WebsiteTestingPage(driver);
+	}
+
 }

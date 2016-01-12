@@ -70,6 +70,20 @@ public class HomePageSteps extends BasePageStepDefs {
 
 	}
 
+	@When("^I click on the Website Testing Icon$")
+	public void clickOnTheWebsiteTestingIcon() throws Throwable {
+	    websiteTestingPage = homePage.clickOnWebsiteTestingIcon();
+	}
+
+	@Then("^I should be on the Website Testing Page$")
+	public void shouldBeOnTheWebsiteTestingPage() throws Throwable {
+		Assert.assertTrue(
+				"Didn't make it to the client functional testing Page",
+				websiteTestingPage.getPageTitle().contains(
+						"Website Testing"));
+
+	}
+
 	/*
 	 * @When("^I click a services link$") public void i_click_a_services_link()
 	 * throws Throwable {
