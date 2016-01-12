@@ -56,6 +56,20 @@ public class HomePageSteps extends BasePageStepDefs {
 						"Functionality Testing"));
 	}
 
+	@When("^I click on the Compatibility Testing Icon$")
+	public void clickOnTheCompatibilityTestingIcon() throws Throwable {
+	    compatibilityTestingPage = homePage.clickOnCompatibilityTestingIcon();
+	}
+
+	@Then("^I should be on the Compatibility Testing Page$")
+	public void shouldBeOnTheCompatibilityTestingPage() throws Throwable {
+		Assert.assertTrue(
+				"Didn't make it to the client functional testing Page",
+				compatibilityTestingPage.getPageTitle().contains(
+						"Compatibility Testing"));
+
+	}
+
 	/*
 	 * @When("^I click a services link$") public void i_click_a_services_link()
 	 * throws Throwable {

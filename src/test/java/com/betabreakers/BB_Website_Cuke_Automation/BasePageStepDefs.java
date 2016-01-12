@@ -5,6 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.betabreakers.PageObject.BlogPage;
 import com.betabreakers.PageObject.CompanyPage;
+import com.betabreakers.PageObject.CompatibilityTestingPage;
 import com.betabreakers.PageObject.ContactPage;
 import com.betabreakers.PageObject.FunctionalTestingPage;
 import com.betabreakers.PageObject.HomePage;
@@ -24,6 +25,7 @@ public class BasePageStepDefs {
 	protected BlogPage blogPage;
 	protected TestimonialsPage testimonialsPage;
 	protected FunctionalTestingPage functionalTestingPage;
+	protected CompatibilityTestingPage compatibilityTestingPage;
 
 	BasePageStepDefs() {
 		//getDriver();

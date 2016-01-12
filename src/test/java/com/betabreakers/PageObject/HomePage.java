@@ -47,4 +47,10 @@ public class HomePage extends BasePage {
 		return new FunctionalTestingPage(driver);
 	}
 
+	public CompatibilityTestingPage clickOnCompatibilityTestingIcon() {
+		driver.findElement(By.cssSelector("#black-studio-tinymce-4 > div > a > img")).click();
+
+		return new CompatibilityTestingPage(driver);
+	}
+
 }
