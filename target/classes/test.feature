@@ -19,4 +19,7 @@ Feature: This is a test feature
      # | "Snap On"  |
      # | "Trek"     |
      
-     
+     Scenario: checking the testing services icons and read more links
+     Given I am on the home page
+     When I click on the Functional Testing Icon
+     Then I should be on the Functional Testing Page

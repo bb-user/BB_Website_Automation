@@ -43,45 +43,49 @@ public class HomePageSteps extends BasePageStepDefs {
 						.contains(title.toLowerCase()));
 	}
 
-	@When("^I click a services link$")
-	public void i_click_a_services_link() throws Throwable {
-
+	@When("^I click on the Functional Testing Icon$")
+	public void clickOnTheFunctionalTestingIcon() throws Throwable {
+		functionalTestingPage = homePage.clickOnFunctionalTestingIcon();
 	}
 
-	@Then("^I should be on that services page$")
-	public void i_should_be_on_that_services_page() throws Throwable {
-
+	@Then("^I should be on the Functional Testing Page$")
+	public void shouldBeOnTheFunctionalTestingPage() throws Throwable {
+		Assert.assertTrue(
+				"Didn't make it to the client functional testing Page",
+				functionalTestingPage.getPageTitle().contains(
+						"Functionality Testing"));
 	}
 
-	@When("^I click Follow Our Plog$")
-	public void i_click_Follow_Our_Plog() throws Throwable {
-
-	}
-
-	@Then("^I should be on the first page of the block$")
-	public void i_should_be_on_the_first_page_of_the_block() throws Throwable {
-
-	}
-
-	@When("^I click a blog link$")
-	public void i_click_a_blog_link() throws Throwable {
-
-	}
-
-	@Then("^I should be on that blogs page$")
-	public void i_should_be_on_that_blogs_page() throws Throwable {
-
-	}
-
-//	 @Then("^I close the browser$")
-//	 public void quitBrowser() throws Throwable {
-//		 testimonialsPage.quitDriver();
-//	 }
-
-//	@After
-//	 public void quitBrowser() throws Throwable {
-//	 driver.quit();
-//	 }
-
+	/*
+	 * @When("^I click a services link$") public void i_click_a_services_link()
+	 * throws Throwable {
+	 *
+	 * }
+	 *
+	 * @Then("^I should be on that services page$") public void
+	 * i_should_be_on_that_services_page() throws Throwable {
+	 *
+	 * }
+	 *
+	 * @When("^I click Follow Our Plog$") public void i_click_Follow_Our_Plog()
+	 * throws Throwable {
+	 *
+	 * }
+	 *
+	 * @Then("^I should be on the first page of the block$") public void
+	 * i_should_be_on_the_first_page_of_the_block() throws Throwable {
+	 *
+	 * }
+	 *
+	 * @When("^I click a blog link$") public void i_click_a_blog_link() throws
+	 * Throwable {
+	 *
+	 * }
+	 *
+	 * @Then("^I should be on that blogs page$") public void
+	 * i_should_be_on_that_blogs_page() throws Throwable {
+	 *
+	 * }
+	 */
 
 }
