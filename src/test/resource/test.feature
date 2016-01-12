@@ -6,20 +6,18 @@ Feature: This is a test feature
   #    Then I should be on the Services Page
   #      And I close the browser
   #Scenario Outline: Test Page Heading
-   # Given I am on the home page
-   # When I click on <Title>
-   # Then I check I am on <Title>
-
-    # Examples: 
-     # | Title      |
-     # | "Cisco"    |
-     # | "Oracle"   |
-     # | "Scripps"  |
-     # | "LeapFrog" |
-     # | "Snap On"  |
-     # | "Trek"     |
-     
-     Scenario: checking the testing services icons and read more links
-     Given I am on the home page
-     When I click on the Functional Testing Icon
-     Then I should be on the Functional Testing Page
+  # Given I am on the home page
+  # When I click on <Title>
+  # Then I check I am on <Title>
+  # Examples:
+  # | Title      |
+  # | "Cisco"    |
+  # | "Oracle"   |
+  # | "Scripps"  |
+  # | "LeapFrog" |
+  # | "Snap On"  |
+  # | "Trek"     |
+  Scenario: checking the testing services icons and read more links
+    Given I am on the home page
+    When I click on the Functional Testing Icon
+    Then I should be on the Functional Testing Page
