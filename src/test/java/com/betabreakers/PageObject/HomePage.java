@@ -41,4 +41,10 @@ public class HomePage extends BasePage {
 		return new TestimonialsPage(driver);
 	}
 
+	public FunctionalTestingPage clickOnFunctionalTestingIcon() {
+		driver.findElement(By.cssSelector("#black-studio-tinymce-3 > div > a > img")).click();
+
+		return new FunctionalTestingPage(driver);
+	}
+
 }
